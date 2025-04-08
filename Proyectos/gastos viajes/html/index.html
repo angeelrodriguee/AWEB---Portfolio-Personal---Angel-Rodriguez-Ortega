@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gastos de Viaje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Gastos de Viaje</h1>
+        
+        <label for="gastoComida">Gasto en comida:</label>
+        <input type="number" id="gastoComida" placeholder="Ingresa el gasto en comida">
+
+        <label for="gastoAlojamiento">Gasto en alojamiento:</label>
+        <input type="number" id="gastoAlojamiento" placeholder="Ingresa el gasto en alojamiento">
+
+        <label for="otrosGastos">Otros gastos:</label>
+        <input type="number" id="otrosGastos" placeholder="Ingresa otros gastos">
+
+        <button onclick="calcularGastos()">Calcular Total</button>
+
+        <div id="resultado">
+            <h3>Total de los gastos de viaje: $<span id="total">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
